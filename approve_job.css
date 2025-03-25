@@ -1,0 +1,57 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 400px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Success Message */
+.message-box h2 {
+    color: #28a745;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.message-box p {
+    color: #555;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* Button */
+.message-box a {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.message-box a:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+    .container {
+        width: 95%;
+    }
+}
