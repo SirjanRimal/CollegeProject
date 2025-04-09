@@ -1,4 +1,9 @@
-<?php include('config.php'); ?>
+<?php 
+include('config.php');
+include('navbar.php');
+
+
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -25,15 +30,20 @@
             $result = $stmt->get_result();
 
             while ($job = $result->fetch_assoc()): ?>
-            <div class="job-card">
+            <table>
+                <td>
+            <div class="container">
                 <h3><?= $job['title'] ?></h3>
                 <p><?= $job['description'] ?></p>
                 <p>Salary: $<?= $job['salary'] ?></p>
                 <p>Company: <?= $job['company'] ?></p>
                 <?php if (isset($_SESSION['role']) && $_SESSION['role'] == 'job_seeker'): ?>
-                    <a href="apply_job.php?job_id=<?= $job['job_id'] ?>">Apply Now</a>
-                <?php endif; ?>
+                  <button>  <a href="apply_job.php?job_id=<?= $job['job_id'] ?>">Apply Now</a></button>
+                <?php endif; ?> 
             </div>
+            </td>
+            </table>
+            
             <?php endwhile; ?>
         </div>
     </div>

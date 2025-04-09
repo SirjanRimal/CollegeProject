@@ -1,5 +1,6 @@
 <?php 
 session_start();
+include('navbar.php');
 include('config.php');
 
 // Uncomment this for authentication

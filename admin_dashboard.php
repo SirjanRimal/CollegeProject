@@ -1,6 +1,7 @@
 <?php 
 session_start();
 include('config.php');
+include('navbaremployer.php');
 
 // Uncomment this for authentication
 // if (!isset($_SESSION['user_id']) || $_SESSION['role'] != 'admin') {

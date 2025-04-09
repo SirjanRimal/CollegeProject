@@ -1,4 +1,7 @@
+<?php
+include("navbar.php")
 
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,7 +13,7 @@
 </head>
 <body>
     <!-- Navbar -->
-    <header>
+    <!-- <header>
         <div class="logo"><a href="#">HireYou</a></div>
         <nav>
             <ul>
@@ -27,7 +30,7 @@
                 <li><a href="register.php" class="btn">Sign Up</a></li>
             </ul>
         </nav>
-    </header>
+    </header> -->
 
     <!-- Hero Section -->
     <section class="hero">
