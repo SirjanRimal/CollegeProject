@@ -1,8 +1,8 @@
 /* Global styles */
 body {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(to right, #ffffff, #ffffff);
-    /* display: flex;
+    background: linear-gradient(to right, #ff758c, #ff7eb3);
+    display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -45,7 +45,7 @@ select {
 /* Submit Button */
 button {
     width: 100%;
-    background: #04f600;
+    background: #ff758c;
     color: white;
     padding: 10px;
     border: none;
@@ -56,7 +56,7 @@ button {
 }
 
 button:hover {
-    background: #ff4f7b;
+    background: #1c86ee; /* Slightly darker blue */
 }
 
 /* Error message */
@@ -73,7 +73,7 @@ button:hover {
 
 .redirect-link a {
     text-decoration: none;
-    color: #ff758c;
+    color: #1e90ff;
     font-weight: bold;
 }
 

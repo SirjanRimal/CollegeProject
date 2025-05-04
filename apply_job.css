@@ -1,76 +1,68 @@
-/* General Styles */
+/* Basic page layout */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #f4f6f8;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
 }
 
-/* Container */
-.container {
-    width: 90%;
-    max-width: 400px;
-    background: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+h1 {
     text-align: center;
+    margin-top: 30px;
 }
 
-/* Form */
-.apply-form {
-    width: 100%;
-    padding: 15px 0;
-}
-
+/* Form container */
 form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+    background-color: #fff;
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Labels */
+/* Form inputs and labels */
 label {
-    font-size: 14px;
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
     color: #333;
-    text-align: left;
 }
 
-/* Inputs */
 input[type="text"],
 input[type="email"],
-input[type="file"] {
+select {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
+    margin-bottom: 20px;
     border-radius: 5px;
-    font-size: 14px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    box-sizing: border-box;
 }
 
-/* Button */
+/* Buttons */
 button {
     background-color: #28a745;
     color: white;
-    padding: 10px;
+    padding: 10px 20px;
     border: none;
-    border-radius: 5px;
     font-size: 16px;
+    border-radius: 5px;
     cursor: pointer;
-    transition: 0.3s ease;
+    margin-right: 10px;
 }
 
 button:hover {
     background-color: #218838;
-    transform: scale(1.05);
 }
 
-/* Responsive */
-@media (max-width: 500px) {
-    .container {
-        width: 95%;
-    }
+a {
+    color: #dc3545;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
 }
